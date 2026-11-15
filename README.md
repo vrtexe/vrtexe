@@ -137,5 +137,12 @@ I'm a software engineer who builds **small, typed, dependency-free libraries for
 </p>
 
 <p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vrtexe/vrtexe/output/profile-night-rainbow.svg" />
+    <img src="https://raw.githubusercontent.com/vrtexe/vrtexe/output/profile-season-animate.svg" alt="3D chart of the GitHub contributions of vrtexe, with languages and stats" width="100%" />
+  </picture>
+</p>
+
+<p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:5b8cff,50:b16cff,100:ff6fa8&section=footer" alt="" width="100%" />
 </p>
