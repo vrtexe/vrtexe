@@ -4,7 +4,7 @@
 -->
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:ff6fa8,50:b16cff,100:5b8cff&text=vrtexe&fontColor=ffffff&fontSize=64&fontAlignY=36&desc=TypeScript%20%C2%B7%20DOM%20%C2%B7%20Developer%20tools&descSize=20&descAlignY=58&animation=fadeIn" alt="vrtexe, TypeScript and JavaScript developer building DOM libraries and developer tools" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:ff6fa8,50:b16cff,100:5b8cff&text=vrtexe&fontColor=ffffff&fontSize=64&fontAlignY=36&desc=Software%20Engineer&descSize=20&descAlignY=58&animation=fadeIn" alt="vrtexe, software engineer" width="100%" />
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 
 ## Hi, I'm vrtexe 👋
 
-I'm a software developer who builds **small, typed, dependency-free libraries for the web**. My main project is **[fiorejs](https://github.com/vrtexe/fiore)**, a TypeScript-first way to create real DOM elements with one function per tag, together with its **signals**, **JSX runtime** and **app generator**. I also work on pan-and-zoom gestures for canvas, form libraries for Svelte, build tooling, and a searchable map of AI agent tools.
+I'm a software engineer who builds **small, typed, dependency-free libraries for the web**. My main project is **[fiorejs](https://github.com/vrtexe/fiore)**, a TypeScript-first way to create real DOM elements with one function per tag, together with its **signals**, **JSX runtime** and **app generator**. I also work on pan-and-zoom gestures for canvas, form libraries for Svelte, build tooling, and a searchable map of AI agent tools.
 
 - 🌸 Building **fiorejs**: HTML, SVG and MathML elements in JavaScript, with signals and JSX and no virtual DOM
 - 🧭 Mapping the AI agent ecosystem: CLI agents, MCP servers, skills and plugins
