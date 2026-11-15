@@ -1,4 +1,4 @@
-# Draws the contribution graph as a snake and as a 3D chart and pushes the images to the "output"
+# Draws the contribution graph as a snake and as arcade games and pushes the images to the "output"
 # branch, where the README loads them from. Runs once a day, on every push to main, and by hand.
 
 name: graphics
@@ -15,8 +15,14 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
+      # Runs first: the snake action runs in a container as root and would leave dist/ unwritable.
+      - uses: abozanona/pacman-contribution-graph@d258e3fb01511c1ff4fe6418408ede37b2ad4935 # v5.0.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          games: pacman,breakout,galaga,bomberman,puzzle-bobble,minesweeper
+
       - uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -24,19 +30,9 @@ jobs:
             dist/github-snake.svg?color_snake=#3d6df2&color_dots=#ebedf0,#e2c9ff,#b47cff,#8b4ff0,#e0457b
             dist/github-snake-dark.svg?color_snake=#7aa2ff&color_dots=#3d444d,#7048c8,#9a5cff,#c48cff,#ff8fc0
 
-      - uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39 # v0.9.3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-
-      # dist/ belongs to root because the snake action runs in a container, so collect everything in out/.
-      - run: |
-          mkdir out
-          cp dist/*.svg profile-3d-contrib/profile-season-animate.svg profile-3d-contrib/profile-night-rainbow.svg out/
-
       - uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5.0.0
         with:
           target_branch: output
-          build_dir: out
+          build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
