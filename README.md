@@ -4,7 +4,7 @@
 -->
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:ff6fa8,50:b16cff,100:5b8cff&text=vrtexe&fontColor=ffffff&fontSize=64&fontAlignY=36&desc=Software%20Engineer&descSize=20&descAlignY=58&animation=fadeIn" alt="vrtexe, software engineer" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:ff6fa8,50:b16cff,100:5b8cff&text=vrtexe&fontColor=ffffff&fontSize=64&fontAlignY=36&desc=Software%20Engineer%20%C2%B7%20DOM%20%C2%B7%20Developer%20tools%20%C2%B7%20Infrastructure%20%C2%B7%20Open%20source&descSize=20&descAlignY=58&animation=fadeIn" alt="vrtexe, software engineer" width="100%" />
 </p>
 
 <p align="center">
